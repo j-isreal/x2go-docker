@@ -37,7 +37,9 @@ docker build -t [yourimagename] .
 ```
 
 ### Create Container using Docker Compose
-After you either build an image or choose to use a pre-built Docker Hub image, create your container using Docker Compose.
+After you either choose to use a pre-built Docker Hub image or build an image, create your container using Docker Compose.
+
+<b>Don't forget to edit the appropriate docker-compose file</b> to specify the image and IP address.  See the README.md file in either the lxde or xfce4 folder.
 
 ```
 cd [lxde or xfce4]
@@ -80,7 +82,7 @@ I wanted to expand on the original project and images that were created over a d
 
 This system also works as a VERY cheap remote-desktop for anyone who wants a desktop on the cloud for anything from working remotely or browse internet where there are VPN restrictions.
 
-Note you can run like 2-3 desktops over a cheap DigitalOcean/Linode like VPS.
+Note you can run like 2-3 desktops over a cheap DigitalOcean like VPS.
 
 
 ## Need support?
@@ -89,9 +91,10 @@ Note you can run like 2-3 desktops over a cheap DigitalOcean/Linode like VPS.
 
 ### Credits:
 
-####https://github.com/paimpozhil/DockerX2go
-####http://bmullan.wordpress.com/
-####https://github.com/rogaha/docker-desktop
-####https://github.com/tutumcloud/tutum-ubuntu
+- https://github.com/paimpozhil/DockerX2go
+- http://bmullan.wordpress.com/
+- https://github.com/rogaha/docker-desktop
+- https://github.com/tutumcloud/tutum-ubuntu
 
-#### Docker.io && x2go.org
+- Docker.io && x2go.org
+
