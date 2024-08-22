@@ -1,3 +1,4 @@
+# syntax=docker/dockerfile:1
 FROM ubuntu:latest
 LABEL org.opencontainers.image.authors="jisreal@icllc.cc"
 LABEL org.opencontainers.image.title="x2go Ubuntu LXDE"
@@ -17,7 +18,7 @@ RUN dpkg-divert --local --rename --add /sbin/initctl && ln -sf /bin/true /sbin/i
 
 RUN apt-get -y install fuse  || :
 RUN rm -rf /var/lib/dpkg/info/fuse.postinst
-RUN apt-get -y install fuse
+RUN apt-get -y install fuse wget
 
 RUN apt-get install -y sudo openssh-server lxde lxde-icon-theme lxde-settings-daemon software-properties-common python3-software-properties
 
@@ -27,12 +28,9 @@ RUN apt-get update
 
 RUN apt-get install x2goserver x2goserver-xsession pwgen firefox pulseaudio libappindicator3-1 -y
 
-#RUN wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-
-#RUN dpkg -i google-chrome*.deb
-
-#RUN apt-get install -f
-
+RUN wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add - \ 
+    && echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list
+RUN apt-get update && apt-get -y install google-chrome-stable
 #RUN ln -s /chrome.sh /usr/bin/chrome
 
 RUN mkdir -p /var/run/sshd && sed -i "s/UsePrivilegeSeparation.*/UsePrivilegeSeparation no/g" /etc/ssh/sshd_config && sed -i "s/UsePAM.*/UsePAM no/g" /etc/ssh/sshd_config
