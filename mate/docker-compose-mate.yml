@@ -1,0 +1,18 @@
+services:
+  docker_x2go_mate:
+    image: jisreal/docker-x2go-mate-arm64:latest
+    container_name: docker_x2go_mate
+    networks:
+      macvlan1:
+        ipv4_address: 192.168.0.147
+    ports:
+      - "22:22/tcp"
+    volumes:
+      - homes:/home
+    restart: unless-stopped
+networks:
+  macvlan1:
+    name: macvlan10
+    external: true
+volumes:
+  homes:
