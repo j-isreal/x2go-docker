@@ -13,7 +13,7 @@ Currently we have
    - XFCE4 desktop
 
 ## How to run on Docker ?
-You can use a pre-built image or build for your system architecture/setup.
+You can use a pre-built docker image or build for your system architecture/setup.
 
 NOTE: It is highly recommended to use a pre-built Docker Hub image by just using the Docker compose method below.
 
@@ -21,16 +21,9 @@ NOTE: It is highly recommended to use a pre-built Docker Hub image by just using
 Docker Hub images:
 
 - [https://hub.docker.com/r/jisreal/docker-x2go-xfce4-arm64](https://hub.docker.com/r/jisreal/docker-x2go-xfce4-arm64)
-- 
+- [https://hub.docker.com/r/jisreal/docker-x2go-lxde-arm64](https://hub.docker.com/r/jisreal/docker-x2go-lxde-arm64)
 
-### Create Container using Docker Compose
-After you either build an image or choose to use a pre-built Docker Hub image, create your container using Docker Compose.
 
-```
-cd [lxde or xfce4]
-docker compose
-** note down the root/dockerx passwords.
-```
 
 To build:
 
@@ -41,6 +34,17 @@ docker build -t [yourimagename] .
 
 ** note down the root/dockerx passwords.
 ```
+
+### Create Container using Docker Compose
+After you either build an image or choose to use a pre-built Docker Hub image, create your container using Docker Compose.
+
+```
+cd [lxde or xfce4]
+docker compose -f docker-compose-lxde.yml
+
+** note down the root/dockerx passwords.
+```
+
 
 ### How to run/connect to server with a Client?
 
