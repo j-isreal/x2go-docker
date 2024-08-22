@@ -1,14 +1,13 @@
 # x2go-docker README.md
-<img src="https://img.shields.io/badge/version-1.01-blue" /> <img src="https://img.shields.io/badge/docker-version_24.0.7-green" /> <img src="https://img.shields.io/badge/ubuntu-latest_24.04-orange" />
+<a href="#"><img src="https://img.shields.io/badge/version-1.01-blue" /></a> <a href="#"><img src="https://img.shields.io/badge/docker-version_24.0.7-green" /></a> <a href="#"><img src="https://img.shields.io/badge/ubuntu-latest_24.04-orange" /></a>
 
+<hr />
 
-==========
-
-Docker compose scripts and docker hub images which contain different Ubuntu Desktop setups for x2go remote access
+Docker compose scripts and docker hub images which contain different Ubuntu Desktop setups for x2go remote access desktop
 
 Currently we have
 
-1. Ubuntu 24.04 (latest) with either:
+- Ubuntu 24.04 (latest) with either:
    - LXDE desktop
    - XFCE4 desktop
   
