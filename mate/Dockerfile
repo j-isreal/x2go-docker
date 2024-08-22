@@ -52,7 +52,7 @@ RUN if lsb_release -cs | grep -qE "precise|trusty"; then \
       ubuntu-mate-desktop^; \
     fi
 
-# 22.04 LTS specifics - only for amd64, WILL ERROR on arm64
+# 22.04 LTS specifics - only for amd64, WILL ERROR on arm64!  and only acpid is in amd64 version
 #RUN echo "Warning: it is jammy, will use workarounds!" && \
 #      env DEBIAN_FRONTEND=noninteractive apt autopurge -y \
 #      acpid acpi-support
