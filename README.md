@@ -5,6 +5,8 @@
 
 Docker compose scripts and docker hub images which contain different Ubuntu Desktop setups for x2go remote access desktop
 
+To install docker, [https://docs.docker.com/engine/install/#server](https://docs.docker.com/engine/install/#server)
+
 Currently, I have linux-based arm64 and amd64 images:
 
 - Ubuntu 24.04 (latest) with either:
