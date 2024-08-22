@@ -10,6 +10,7 @@ Currently, I have linux-based arm64 and amd64 images:
 - Ubuntu 24.04 (latest) with either:
    - LXDE desktop
    - XFCE4 desktop
+   - Mate desktop
   
 ## 1. Clone the git repo
 Clone the git repo or [download the files](https://github.com/j-isreal/x2go-docker/archive/refs/heads/main.zip) so you can work with them.
