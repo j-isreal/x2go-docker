@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.02.00](https://github.com/j-isreal/x2go-docker/releases/tag/v1.02.00) - 2024-08-22
+### Added
+- Ubuntu Mate desktop option
+
 ## [1.01.00](https://github.com/j-isreal/x2go-docker/releases/tag/v1.01.00) - 2024-08-22
 ### Changed
 n/a
