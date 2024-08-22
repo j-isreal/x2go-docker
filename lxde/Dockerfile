@@ -1,5 +1,6 @@
 FROM ubuntu:latest
-MAINTAINER jisreal "jisreal@icllc.cc"
+#MAINTAINER jisreal "jisreal@icllc.cc"
+LABEL org.opencontainers.image.authors="jisreal@icllc.cc"
 
 RUN apt-get update -y && apt-get upgrade -y
 
