@@ -37,7 +37,7 @@ ENV LANG=en_US.UTF-8
 RUN echo $LANG UTF-8 > /etc/locale.gen && \
     env DEBIAN_FRONTEND=noninteractive apt-get install -y \
      locales && \
-    lsb_release -cs | grep -qE "precise|trusty" && locale-gen $LANG || update-locale --reset LANG=$LANG
+    update-locale --reset LANG=$LANG
 
 
 # Ubuntu MATE desktop install
