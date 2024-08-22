@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if [ -f /.root_pw_set ]; then
-	echo "Root password already set!"
+	echo "Root password already set!  dockerx user exists."
 	exit 0
 fi
 
