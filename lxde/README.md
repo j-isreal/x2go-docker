@@ -11,3 +11,12 @@
 
 - change the IP address after the ipv4_address:
 
+ 
+## Use docker compose to get image and start container
+
+Type the following from the command line:
+
+```
+docker compose -f docker-compose-lxde.yml up -d
+```
+This starts the container and exits compose, leaving the container running in the background.
