@@ -13,7 +13,7 @@ Currently we have
    - XFCE4 desktop
   
 ## Clone the git repo
-Clone the git repo or download the files so you can work with them.
+Clone the git repo or [download the files](https://github.com/j-isreal/x2go-docker/archive/refs/heads/main.zip) so you can work with them.
 ```
 git clone https://github.com/j-isreal/x2go-docker.git
 ```
