@@ -85,6 +85,12 @@ User dockerx can be used to login; however, for some reason you need to use root
 ssh root@dockerhost -p 22
 ```
 
+## Persistent Disk Volume
+The docker compose file sets up a disk storage volume called "homes" and is mounted inside the server at "/home" - the user home folders location.
+
+This volume will be located on the host machine at /var/lib/docker/volumes/ so you can make backups or perform file operations there.
+
+
 ## Why this project?
 
 I wanted to expand on the original project and images that were created over a decade ago by [https://github.com/paimpozhil/](paimpozhil) to include the latest version of Ubuntu (including arm64 for my Raspberry Pi 4b) and the 2 lightweight desktops, XFCE4 and LXDE, via X2go.  Also created /home storage volume on host so it can be backed up from the docker host, updated network to use the local network for easy access, and created docker compose files for both desktop versions.
