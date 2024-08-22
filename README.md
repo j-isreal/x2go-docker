@@ -13,26 +13,30 @@ Currently we have
    - XFCE4 desktop
 
 ## How to run on Docker ?
+You can use a pre-built image or build for your system.
+
+To build:
 
 ```
-git clone https://github.com/paimpozhil/DockerX2go.git 
-cd centos  ## or whatever
+git clone https://github.com/j-isreal/x2go-docker.git
+cd [lxde or xfce4]
 docker build -t [yourimagename] .
 CID=$(docker run -p 2222:22 -t -d [yourimagename])
 
 or simply 
 
-CID=$(docker run -p 2222:22 -t -d paimpozhil/dockerx2go)
+CID=$(docker run -t -d jisreal/docker-x2go-xfce4-arm64)  ## or whatever your arch is after last dash, ie x64, x86, arm64
 docker logs $CID
 
-note down the root/dockerx passwords.
+** note down the root/dockerx passwords.
 ```
+jisreal/docker-x2go-xfce4-arm64
 
 ### How to run/connect to server with a Client?
 
 Download the x2go client for your OS from:
+[http://wiki.x2go.org/doku.php/doc:installation:x2goclient](http://wiki.x2go.org/doku.php/doc:installation:x2goclient)
 
-http://wiki.x2go.org/doku.php/doc:installation:x2goclient
 
 #### Connect to your server with 
 
@@ -57,7 +61,7 @@ ssh root@dockerhost -p 22
 
 ## WHY ?
 
-I wanted to expand on the original project an images that were created over a decade ago to include the latest versions of Ubuntu (including arm64 for my Raspberry Pi 4b) and the 2 lightweight desktops, XFCE4 and LXDE, via X2go.  Also created /home storage volume on host so it can be backed up from the docker host, updated network to use the local network for easy access, and created docker compose files for both desktop versions.
+I wanted to expand on the original project and images that were created over a decade ago by [https://github.com/paimpozhil/](paimpozhil) to include the latest version of Ubuntu (including arm64 for my Raspberry Pi 4b) and the 2 lightweight desktops, XFCE4 and LXDE, via X2go.  Also created /home storage volume on host so it can be backed up from the docker host, updated network to use the local network for easy access, and created docker compose files for both desktop versions.
 
 This system also works as a VERY cheap remote-desktop for anyone who wants a desktop on the cloud for anything from working remotely or browse internet where there are VPN restrictions.
 
