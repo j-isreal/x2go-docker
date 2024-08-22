@@ -31,7 +31,7 @@ RUN wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key
     && echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list
 RUN apt-get update && apt-get -y install google-chrome-stable
 
-#RUN ln -s /chrome.sh /usr/bin/chrome
+RUN ln -s /chrome.sh /usr/bin/chrome
 
 RUN mkdir -p /var/run/sshd && sed -i "s/UsePrivilegeSeparation.*/UsePrivilegeSeparation no/g" /etc/ssh/sshd_config && sed -i "s/UsePAM.*/UsePAM no/g" /etc/ssh/sshd_config
 RUN sed -i "s/PermitRootLogin.*/PermitRootLogin yes/g" /etc/ssh/sshd_config
@@ -39,7 +39,7 @@ RUN sed -i "s/#PasswordAuthentication/PasswordAuthentication/g" /etc/ssh/sshd_co
 
 ADD set_root_pw.sh /set_root_pw.sh
 ADD run.sh /run.sh
-#ADD chrome.sh /chrome.sh
+ADD chrome.sh /chrome.sh
 RUN chmod +x /*.sh
 
 EXPOSE 22
