@@ -11,6 +11,12 @@ Currently we have
 1. Ubuntu 24.04 (latest) with either:
    - LXDE desktop
    - XFCE4 desktop
+  
+## Clone the git repo
+Clone the git repo or download the files so you can work with them.
+```
+git clone https://github.com/j-isreal/x2go-docker.git
+```
 
 ## Create docker network FIRST
 Create a macvlan docker network for the local lan FIRST - see [1-create-network.md](https://github.com/j-isreal/x2go-docker/blob/998f9714272729bfac3506e83e5495dc16be2e9e/1-create-network.md)
@@ -20,7 +26,6 @@ Create a macvlan docker network for the local lan FIRST - see [1-create-network.
 You can use a pre-built docker image or build for your system architecture/setup.
 
 NOTE: It is highly recommended to use a pre-built Docker Hub image by just using the Docker compose method below.
-
 
 Docker Hub images:
 
@@ -33,11 +38,10 @@ Docker Hub images:
 To build:
 
 ```
-git clone https://github.com/j-isreal/x2go-docker.git
-cd [lxde or xfce4]
-docker build -t [yourimagename] .
+(go to folder you git cloned)
+cd [lxde or xfce4]  # your choice of desktop
+docker build -t [yourimagename] . # don't forget the trailing period
 
-** note down the root/dockerx passwords
 ```
 
 ### Create Container using Docker Compose
@@ -45,11 +49,12 @@ After you either choose to use a pre-built Docker Hub image or build an image, c
 
 <b>Don't forget to edit the appropriate docker-compose file</b> to specify the image and IP address.  
 
-See the README.md file in either the lxde or xfce4 folder.
+See the README.md file in either the lxde or xfce4 folder first.
 
 ```
-cd [lxde or xfce4]
-docker compose -f docker-compose-lxde.yml
+(go to folder you git cloned)
+cd [lxde or xfce4]  # your choice of desktop
+docker compose -f docker-compose-lxde.yml up -d
 
 ** note down the root/dockerx passwords
 ```
