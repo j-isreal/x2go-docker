@@ -1,0 +1,19 @@
+services:
+  docker_x2go_v1:
+    image: docker-x2go-xfce4:latest
+    container_name: docker_x2go_v1
+    networks:
+      macvlan1:
+        ipv4_address: 192.168.0.145
+    ports:
+      - "22:22/tcp"
+    volumes:
+      - x2go_homes:/home
+
+networks:
+  macvlan1:
+    name: macvlan10
+    external: true
+
+volumes:
+  x2go_homes:
