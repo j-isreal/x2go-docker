@@ -5,7 +5,7 @@ LABEL org.opencontainers.image.description="Docker image of latest Ubuntu (arm64
 
 RUN apt-get update -y && apt-get upgrade -y
 
-ENV DEBIAN_FRONTEND noninteractive
+ENV DEBIAN_FRONTEND=noninteractive
 
 
 # Upstart and DBus have issues inside docker. We work around in order to install firefox.
