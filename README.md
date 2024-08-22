@@ -86,9 +86,9 @@ ssh root@dockerhost -p 22
 ```
 
 ## Persistent Disk Volume
-The docker compose file sets up a disk storage volume called "homes" and is mounted inside the server at "/home" - the user home folders location.
+The docker compose file sets up a disk storage volume called "x2go_homes" and is mounted inside the x2go server at "/home" - the user home folders location.
 
-This volume will be located on the host machine at /var/lib/docker/volumes/ so you can make backups or perform file operations there.
+This volume will be located on the host machine at "/var/lib/docker/volumes/x2go_homes/_data" so you can make backups or perform file operations there.
 
 
 ## Why this project?
