@@ -1,5 +1,7 @@
 FROM ubuntu:latest
 LABEL org.opencontainers.image.authors="jisreal@icllc.cc"
+LABEL org.opencontainers.image.title="x2go Ubuntu XFCE4"
+LABEL org.opencontainers.image.description="Docker image of latest Ubuntu (arm64) with x2go server and XFCE4 Desktop"
 
 RUN apt-get update -y && apt-get upgrade -y
 
