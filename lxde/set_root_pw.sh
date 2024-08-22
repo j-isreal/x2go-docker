@@ -10,6 +10,7 @@ _word=$( [ ${ROOT_PASS} ] && echo "preset" || echo "random" )
 echo "=> Setting a ${_word} password to the root user"
 echo "root:$PASS" | chpasswd
 
+deluser --remove-home ubuntu
 adduser --disabled-password --gecos "" dockerx 
 adduser dockerx sudo
 
