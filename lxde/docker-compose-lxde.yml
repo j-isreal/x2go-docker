@@ -10,11 +10,9 @@ services:
     volumes:
       - homes:/home
     restart: unless-stopped
-
 networks:
   macvlan1:
     name: macvlan10
     external: true
-
 volumes:
   homes:

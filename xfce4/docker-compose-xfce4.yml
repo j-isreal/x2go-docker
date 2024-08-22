@@ -14,6 +14,5 @@ networks:
   macvlan1:
     name: macvlan10
     external: true
-
 volumes:
   homes:
