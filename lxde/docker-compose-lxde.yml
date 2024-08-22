@@ -9,6 +9,7 @@ services:
       - "22:22/tcp"
     volumes:
       - x2go_homes:/home
+    restart: unless-stopped
 
 networks:
   macvlan1:
