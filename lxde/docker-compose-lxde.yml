@@ -1,6 +1,6 @@
 services:
   docker_x2go_lxde:
-    image: docker-x2go-lxde-arm64:latest
+    image: jisreal/docker-x2go-lxde-arm64:latest
     container_name: docker_x2go_lxde
     networks:
       macvlan1:
