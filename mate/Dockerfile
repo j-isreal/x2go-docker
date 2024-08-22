@@ -42,15 +42,7 @@ RUN echo $LANG UTF-8 > /etc/locale.gen && \
 
 
 # Ubuntu MATE desktop install
-# * package for 12.04 LTS and 14.04 LTS
-# * task for 16.04 LTS and newer versions
-RUN if lsb_release -cs | grep -qE "precise|trusty"; then \
-    env DEBIAN_FRONTEND=noninteractive apt-get install -y \
-      ubuntu-mate-desktop --force-yes; \
-    else \
-      env DEBIAN_FRONTEND=noninteractive apt-get install -y \
-      ubuntu-mate-desktop^; \
-    fi
+RUN env DEBIAN_FRONTEND=noninteractive apt-get install -y ubuntu-mate-desktop^
 
 # 22.04 LTS specifics - only for amd64, WILL ERROR on arm64!  and only acpid is in amd64 version
 #RUN echo "Warning: it is jammy, will use workarounds!" && \
