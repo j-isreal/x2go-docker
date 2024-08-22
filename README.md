@@ -30,6 +30,7 @@ Docker Hub images - [use the docker compose method below](https://github.com/j-i
 
 - [https://hub.docker.com/r/jisreal/docker-x2go-xfce4-arm64](https://hub.docker.com/r/jisreal/docker-x2go-xfce4-arm64)
 - [https://hub.docker.com/r/jisreal/docker-x2go-lxde-arm64](https://hub.docker.com/r/jisreal/docker-x2go-lxde-arm64)
+- [https://hub.docker.com/r/jisreal/docker-x2go-mate-arm64](https://hub.docker.com/r/jisreal/docker-x2go-mate-arm64)
 - [https://hub.docker.com/r/jisreal/docker-x2go-lxde-amd64](https://hub.docker.com/r/jisreal/docker-x2go-lxde-amd64)
 - [https://hub.docker.com/r/jisreal/docker-x2go-xfce4-amd64](https://hub.docker.com/r/jisreal/docker-x2go-xfce4-amd64)
 
