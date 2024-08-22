@@ -1,11 +1,10 @@
 # README.md
-<img src="https://img.shields.io/badge/version-1.0_alpha-blue" />
+<img src="https://img.shields.io/badge/version-1.0_alpha-blue" /> <img src="https://img.shields.io/badge/docker-version_24.0.7-green" /> <img src="https://img.shields.io/badge/ubuntu-latest_24.04-orange" />
 
-Original contributors: [https://github.com/paimpozhil/DockerX2go](https://github.com/paimpozhil/)
 
 ==========
 
-Docker compose scripts and images which contain different Ubuntu Desktop setups 
+Docker compose scripts and docker hub images which contain different Ubuntu Desktop setups for x2go remote access
 
 Currently we have
 
