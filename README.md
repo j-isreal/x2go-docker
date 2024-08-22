@@ -22,6 +22,7 @@ Docker Hub images:
 
 - [https://hub.docker.com/r/jisreal/docker-x2go-xfce4-arm64](https://hub.docker.com/r/jisreal/docker-x2go-xfce4-arm64)
 - [https://hub.docker.com/r/jisreal/docker-x2go-lxde-arm64](https://hub.docker.com/r/jisreal/docker-x2go-lxde-arm64)
+- [https://hub.docker.com/r/jisreal/docker-x2go-lxde-amd64](https://hub.docker.com/r/jisreal/docker-x2go-lxde-amd64)
 
 
 
