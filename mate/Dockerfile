@@ -52,11 +52,9 @@ RUN if lsb_release -cs | grep -qE "precise|trusty"; then \
     fi
 
 # 22.04 LTS specifics
-RUN if lsb_release -cs | grep -qE "jammy"; then \
-    echo "Warning: it is jammy, will use workarounds!" && \
-        env DEBIAN_FRONTEND=noninteractive apt autopurge -y \
-      acpid acpi-support; \
-    else true; fi
+RUN echo "Warning: it is jammy, will use workarounds!" && \
+      env DEBIAN_FRONTEND=noninteractive apt autopurge -y \
+      acpid acpi-support
 
 # remove mate-screensaver
 RUN env DEBIAN_FRONTEND=noninteractive apt-get purge mate-screensaver -y
