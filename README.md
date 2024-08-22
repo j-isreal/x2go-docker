@@ -42,7 +42,7 @@ To build for your architecture/system - NOT SUGGESTED:
 
 ```
 (go to folder you git cloned)
-cd [lxde or xfce4]  # your choice of desktop
+cd [lxde or xfce4 or mate]  # your choice of desktop
 docker build -t [yourimagename] . # don't forget the trailing period
 ```
 
@@ -55,12 +55,12 @@ See the README.md file in either the lxde or xfce4 folder first to make the chan
 
 ```
 (go to folder you git cloned)
-cd [lxde or xfce4]  # your choice of desktop
+cd [lxde or xfce4 or mate]  # your choice of desktop
 docker compose -f docker-compose-lxde.yml up -d  # or -r docker-compose-xfce4.yml, your choice
 
 ** note down the root/dockerx passwords
 ```
-The initial passwords will be displayed.  It's recommended to change the passwords immediately, for security.
+The initial passwords will be displayed if you omit the -d above.  It's recommended to change the passwords immediately, for security.
 
 
 ## 4. Connect to x2go server with client
