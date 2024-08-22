@@ -8,7 +8,7 @@ services:
     ports:
       - "22:22/tcp"
     volumes:
-      - x2go_homes:/home
+      - homes:/home
 
 networks:
   macvlan1:
@@ -16,4 +16,4 @@ networks:
     external: true
 
 volumes:
-  x2go_homes:
+  homes:
