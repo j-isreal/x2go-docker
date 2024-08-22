@@ -23,7 +23,7 @@ Docker Hub images:
 - [https://hub.docker.com/r/jisreal/docker-x2go-xfce4-arm64](https://hub.docker.com/r/jisreal/docker-x2go-xfce4-arm64)
 - [https://hub.docker.com/r/jisreal/docker-x2go-lxde-arm64](https://hub.docker.com/r/jisreal/docker-x2go-lxde-arm64)
 - [https://hub.docker.com/r/jisreal/docker-x2go-lxde-amd64](https://hub.docker.com/r/jisreal/docker-x2go-lxde-amd64)
-
+- [https://hub.docker.com/r/jisreal/docker-x2go-xfce4-amd64](https://hub.docker.com/r/jisreal/docker-x2go-xfce4-amd64)
 
 
 To build:
@@ -33,7 +33,7 @@ git clone https://github.com/j-isreal/x2go-docker.git
 cd [lxde or xfce4]
 docker build -t [yourimagename] .
 
-** note down the root/dockerx passwords.
+** note down the root/dockerx passwords
 ```
 
 ### Create Container using Docker Compose
@@ -43,7 +43,7 @@ After you either build an image or choose to use a pre-built Docker Hub image, c
 cd [lxde or xfce4]
 docker compose -f docker-compose-lxde.yml
 
-** note down the root/dockerx passwords.
+** note down the root/dockerx passwords
 ```
 
 
