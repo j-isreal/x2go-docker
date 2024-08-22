@@ -1,7 +1,7 @@
 services:
-  docker_x2go_v2:
-    image: docker-x2go-lxde:latest
-    container_name: docker_x2go_v2
+  docker_x2go_lxde:
+    image: docker-x2go-lxde-arm64:latest
+    container_name: docker_x2go_lxde
     networks:
       macvlan1:
         ipv4_address: 192.168.0.146

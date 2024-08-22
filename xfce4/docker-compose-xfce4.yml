@@ -1,7 +1,7 @@
 services:
-  docker_x2go_v1:
-    image: docker-x2go-xfce4:latest
-    container_name: docker_x2go_v1
+  docker_x2go_xfce:
+    image: docker-x2go-xfce4-arm64:latest
+    container_name: docker_x2go_xfce
     networks:
       macvlan1:
         ipv4_address: 192.168.0.145

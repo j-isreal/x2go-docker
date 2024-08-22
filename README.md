@@ -30,7 +30,10 @@ docker logs $CID
 
 ** note down the root/dockerx passwords.
 ```
-jisreal/docker-x2go-xfce4-arm64
+
+Docker Hub images:
+
+
 
 ### How to run/connect to server with a Client?
 
