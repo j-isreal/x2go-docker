@@ -34,7 +34,6 @@ RUN env DEBIAN_FRONTEND=noninteractive apt-get install -y \
 
 # Language/locale settings
 ENV LANG=en_US.UTF-8
-#ENV LANG=en_US.utf8
 RUN echo $LANG UTF-8 > /etc/locale.gen && \
     env DEBIAN_FRONTEND=noninteractive apt-get install -y \
      locales && \
