@@ -54,7 +54,7 @@ RUN if lsb_release -cs | grep -qE "precise|trusty"; then \
 # 22.04 LTS specifics
 RUN if lsb_release -cs | grep -qE "jammy"; then \
     echo "Warning: it is jammy, will use workarounds!" && \
-        env DEBIAN_FRONTEND=noninteractive sudo apt autopurge -y \
+        env DEBIAN_FRONTEND=noninteractive apt autopurge -y \
       acpid acpi-support; \
     else true; fi
 
