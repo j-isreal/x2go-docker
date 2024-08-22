@@ -79,7 +79,7 @@ Username : dockerx
 Password : (varies or could be just 'changeme')
 
 
-Select the Session TYPE as : XFCE or LXDE depending on your setup.
+Select the Session TYPE as : XFCE or LXDE or MATE depending on your setup.
 
 You can also SSH to the docker container directly with root or dockerx users and their passwords over the port 22 with linux ssh or windows putty clients.
 
