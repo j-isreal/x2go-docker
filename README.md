@@ -1,5 +1,5 @@
 # x2go-docker README.md
-<a href="#"><img src="https://img.shields.io/badge/version-1.01-blue" /></a> <a href="#"><img src="https://img.shields.io/badge/docker-version_24.0.7-green" /></a> <a href="#"><img src="https://img.shields.io/badge/ubuntu-latest_24.04-orange" /></a>
+<a href="#"><img src="https://img.shields.io/badge/version-1.01.00-blue" /></a> <a href="#"><img src="https://img.shields.io/badge/docker-version_24.0.7-green" /></a> <a href="#"><img src="https://img.shields.io/badge/ubuntu-latest_24.04-orange" /></a>
 
 <hr />
 
