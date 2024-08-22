@@ -24,9 +24,9 @@ Create a macvlan docker network for the local lan FIRST - see [1-create-network.
 ### How to run on Docker ?
 You can use my pre-built docker images or build one for your system architecture/setup using included Dockerfile.
 
-NOTE: It is <u>highly recommended</u> to use a pre-built Docker Hub image by using the Docker compose method below.
-
-Docker Hub images - use the docker compose method below:
+NOTE: It is <u>highly recommended</u> to use a pre-built Docker Hub image [by using the Docker compose method below.
+](https://github.com/j-isreal/x2go-docker/blob/main/README.md#3-create-container-using-docker-compose)
+Docker Hub images - [use the docker compose method below](https://github.com/j-isreal/x2go-docker/blob/main/README.md#3-create-container-using-docker-compose):
 
 - [https://hub.docker.com/r/jisreal/docker-x2go-xfce4-arm64](https://hub.docker.com/r/jisreal/docker-x2go-xfce4-arm64)
 - [https://hub.docker.com/r/jisreal/docker-x2go-lxde-arm64](https://hub.docker.com/r/jisreal/docker-x2go-lxde-arm64)
@@ -34,7 +34,7 @@ Docker Hub images - use the docker compose method below:
 - [https://hub.docker.com/r/jisreal/docker-x2go-xfce4-amd64](https://hub.docker.com/r/jisreal/docker-x2go-xfce4-amd64)
 
 
-To build:
+To build for your architecture/system - NOT SUGGESTED:
 
 ```
 (go to folder you git cloned)
