@@ -8,7 +8,6 @@ RUN apt-get update -y && apt-get upgrade -y
 
 ENV DEBIAN_FRONTEND=noninteractive
 
-
 # Upstart and DBus have issues inside docker. We work around in order to install firefox.
 RUN dpkg-divert --local --rename --add /sbin/initctl && ln -sf /bin/true /sbin/initctl
 
