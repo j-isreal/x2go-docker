@@ -12,4 +12,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 ### Fixed
 
-## 1.00.00 - 2024-08-20
+## [1.00.00](https://github.com/j-isreal/x2go-docker/releases/tag/v1.00.00) - 2024-08-20
+First release
