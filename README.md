@@ -1,4 +1,4 @@
-# README.md
+# x2go-docker README.md
 <img src="https://img.shields.io/badge/version-1.0_alpha-blue" /> <img src="https://img.shields.io/badge/docker-version_24.0.7-green" /> <img src="https://img.shields.io/badge/ubuntu-latest_24.04-orange" />
 
 
@@ -8,12 +8,29 @@ Docker compose scripts and docker hub images which contain different Ubuntu Desk
 
 Currently we have
 
-1. Ubuntu 24.04 (latest)
+1. Ubuntu 24.04 (latest) with either:
    - LXDE desktop
    - XFCE4 desktop
 
 ## How to run on Docker ?
-You can use a pre-built image or build for your system.
+You can use a pre-built image or build for your system architecture/setup.
+
+NOTE: It is highly recommended to use a pre-built Docker Hub image by just using the Docker compose method below.
+
+
+Docker Hub images:
+
+- [https://hub.docker.com/r/jisreal/docker-x2go-xfce4-arm64](https://hub.docker.com/r/jisreal/docker-x2go-xfce4-arm64)
+- 
+
+### Create Container using Docker Compose
+After you either build an image or choose to use a pre-built Docker Hub image, create your container using Docker Compose.
+
+```
+cd [lxde or xfce4]
+docker compose
+** note down the root/dockerx passwords.
+```
 
 To build:
 
@@ -21,19 +38,9 @@ To build:
 git clone https://github.com/j-isreal/x2go-docker.git
 cd [lxde or xfce4]
 docker build -t [yourimagename] .
-CID=$(docker run -p 2222:22 -t -d [yourimagename])
-
-or simply 
-
-CID=$(docker run -t -d jisreal/docker-x2go-xfce4-arm64)  ## or whatever your arch is after last dash, ie x64, x86, arm64
-docker logs $CID
 
 ** note down the root/dockerx passwords.
 ```
-
-Docker Hub images:
-
-
 
 ### How to run/connect to server with a Client?
 
