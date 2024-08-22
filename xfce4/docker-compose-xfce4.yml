@@ -9,7 +9,7 @@ services:
       - "22:22/tcp"
     volumes:
       - homes:/home
-
+    restart: unless-stopped
 networks:
   macvlan1:
     name: macvlan10
