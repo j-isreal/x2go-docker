@@ -1,5 +1,5 @@
 # x2go-docker README.md
-<img src="https://img.shields.io/badge/version-1.0_alpha-blue" /> <img src="https://img.shields.io/badge/docker-version_24.0.7-green" /> <img src="https://img.shields.io/badge/ubuntu-latest_24.04-orange" />
+<img src="https://img.shields.io/badge/version-1.01-blue" /> <img src="https://img.shields.io/badge/docker-version_24.0.7-green" /> <img src="https://img.shields.io/badge/ubuntu-latest_24.04-orange" />
 
 
 ==========
