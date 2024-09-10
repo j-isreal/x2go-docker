@@ -3,7 +3,8 @@
 
 <hr />
 
-Docker compose scripts and docker hub images which contain different Ubuntu Desktop setups for x2go remote access desktop
+**Docker compose scripts and docker hub images which contain different Ubuntu Desktop setups for x2go remote access desktop
+**
 
 To install docker, [https://docs.docker.com/engine/install/#server](https://docs.docker.com/engine/install/#server)
 
@@ -13,6 +14,10 @@ Currently, I have linux-based arm64 and amd64 images:
    - LXDE desktop
    - XFCE4 desktop
    - Mate desktop
+
+ **Check out my development project page:** https://www.jinet.us/dev/dev-projects/x2go-docker/
+ <br/><br />
+ 
   
 ## 1. Clone the git repo
 Clone the git repo or [download the files](https://github.com/j-isreal/x2go-docker/archive/refs/heads/main.zip) so you can work with them.
@@ -27,15 +32,17 @@ Create a macvlan docker network for the local lan FIRST - see [1-create-network.
 ### How to run on Docker ?
 You can use my pre-built docker images or build one for your system architecture/setup using included Dockerfile.
 
-NOTE: It is <u>highly recommended</u> to use a pre-built Docker Hub image [by using the Docker compose method below.
-](https://github.com/j-isreal/x2go-docker/blob/main/README.md#3-create-container-using-docker-compose)
-Docker Hub images - [use the docker compose method below](https://github.com/j-isreal/x2go-docker/blob/main/README.md#3-create-container-using-docker-compose):
+NOTE: It is <u>highly recommended</u> to use a pre-built Docker Hub image [by using the Docker compose method below
+](https://github.com/j-isreal/x2go-docker/blob/main/README.md#3-create-container-using-docker-compose).
+
+**Docker Hub images** - [use the docker compose method below](https://github.com/j-isreal/x2go-docker/blob/main/README.md#3-create-container-using-docker-compose):
 
 - [https://hub.docker.com/r/jisreal/docker-x2go-xfce4-arm64](https://hub.docker.com/r/jisreal/docker-x2go-xfce4-arm64)
 - [https://hub.docker.com/r/jisreal/docker-x2go-lxde-arm64](https://hub.docker.com/r/jisreal/docker-x2go-lxde-arm64)
 - [https://hub.docker.com/r/jisreal/docker-x2go-mate-arm64](https://hub.docker.com/r/jisreal/docker-x2go-mate-arm64)
 - [https://hub.docker.com/r/jisreal/docker-x2go-lxde-amd64](https://hub.docker.com/r/jisreal/docker-x2go-lxde-amd64)
 - [https://hub.docker.com/r/jisreal/docker-x2go-xfce4-amd64](https://hub.docker.com/r/jisreal/docker-x2go-xfce4-amd64)
+- [https://hub.docker.com/r/jisreal/docker-x2go-mate-amd64](https://hub.docker.com/r/jisreal/docker-x2go-mate-amd64)
 
 
 To build for your architecture/system - NOT SUGGESTED:
@@ -117,3 +124,6 @@ You can run 2-3 desktops over a cheap DigitalOcean VPS.  I run this on my Raspbe
 
 - Docker.io and x2go.org
 
+**Check out my development project page:** https://www.jinet.us/dev/dev-projects/x2go-docker/
+
+Copyright &copy; 2024 Jacob Eiler, Isreal Consulting, LLC.  All rights reserved.
